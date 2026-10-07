@@ -1,0 +1,7 @@
+<resources>
+    <string name="title">Hoď kostkou</string>
+    <string name="roll">Hodit</string>
+    <string name="rolling">Hází se…</string>
+    <string name="summary">Počet hodů: %1$d · Poslední hod: %2$s</string>
+    <string name="dice_description">Kostka: %1$d</string>
+</resources>

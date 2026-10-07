@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F4F7F7">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#202426" />
+    <TextView
+        android:id="@+id/tvDice"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textSize="160sp"
+        android:textColor="#087F72" />
+    <Button
+        android:id="@+id/btnRoll"
+        android:layout_width="160dp"
+        android:layout_height="56dp"
+        android:text="@string/roll"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="#087F72"
+        android:textColor="#FFFFFF" />
+    <TextView
+        android:id="@+id/tvSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:paddingHorizontal="16dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#50585A" />
+</LinearLayout>
