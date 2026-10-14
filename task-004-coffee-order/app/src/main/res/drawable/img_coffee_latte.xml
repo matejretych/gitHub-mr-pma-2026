@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="320dp" android:height="160dp" android:viewportWidth="320" android:viewportHeight="160">
+    <!-- Vlastni ilustrace vysoke sklenice s vrstvami mleka a kavy. -->
+    <path android:fillColor="#D0E3DD" android:pathData="M91,140 Q160,130 229,140 Q225,150 160,151 Q95,150 91,140" />
+    <path android:fillColor="#00000000" android:strokeColor="#96B7BE" android:strokeWidth="7" android:pathData="M203,45 C245,37 241,103 201,103" />
+    <path android:fillColor="#D3E5E8" android:pathData="M108,20 L211,20 L199,133 Q160,148 121,133 Z" />
+    <path android:fillColor="#F5E7D4" android:pathData="M116,68 L203,68 L192,129 Q160,139 128,129 Z" />
+    <path android:fillColor="#C69257" android:pathData="M113,37 L206,37 L203,73 Q160,84 117,73 Z" />
+    <path android:fillColor="#805236" android:pathData="M114,42 L205,42 L204,52 Q160,60 115,52 Z" />
+    <path android:fillColor="#FFFCF5" android:pathData="M111,24 C111,10 208,10 208,24 L206,40 C206,55 114,55 114,40 Z" />
+    <path android:fillColor="#FFFFFF" android:fillAlpha="0.6" android:pathData="M122,51 L128,52 L135,122 L130,120 Z" />
+</vector>

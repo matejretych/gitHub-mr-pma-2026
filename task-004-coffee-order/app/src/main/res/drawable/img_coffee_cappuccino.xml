@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="320dp" android:height="160dp" android:viewportWidth="320" android:viewportHeight="160">
+    <!-- Vlastni ilustrace sirokeho salku s mlecnou penou. -->
+    <path android:fillColor="#D0E3DD" android:pathData="M59,135 Q160,118 261,135 Q255,150 160,150 Q65,150 59,135" />
+    <path android:fillColor="#00000000" android:strokeColor="#C75968" android:strokeWidth="11" android:pathData="M215,63 C271,51 266,112 219,111" />
+    <path android:fillColor="#C75968" android:pathData="M89,57 L226,57 L216,104 Q209,135 157,135 Q106,135 98,104 Z" />
+    <path android:fillColor="#F5E7D4" android:pathData="M89,57 C89,27 226,27 226,57 C226,86 89,86 89,57" />
+    <path android:fillColor="#C69257" android:pathData="M100,57 C100,35 215,35 215,57 C215,79 100,79 100,57" />
+    <path android:fillColor="#FFFCF5" android:pathData="M157,67 C140,58 120,52 139,45 Q151,41 157,52 Q166,39 179,47 C195,56 169,63 157,67" />
+    <path android:fillColor="#E88892" android:pathData="M109,87 L117,87 Q120,115 143,122 Q119,120 114,106 Z" />
+</vector>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Kaffeebestellung</string>
+    <string name="choose_coffee">Kaffee auswählen</string>
+    <string name="coffee_espresso">Espresso</string>
+    <string name="coffee_cappuccino">Cappuccino</string>
+    <string name="coffee_latte">Latte</string>
+    <string name="coffee_image">Illustration: %1$s</string>
+    <string name="customize">Extras</string>
+    <string name="extra_oat_milk">Hafermilch</string>
+    <string name="extra_vanilla">Vanillesirup</string>
+    <string name="extra_shot">Zusätzlicher Espresso</string>
+    <string name="choice_price">%1$s · %2$s</string>
+    <string name="extra_price">%1$s (+%2$s)</string>
+    <string name="quantity">Anzahl</string>
+    <string name="decrease_quantity">Anzahl verringern</string>
+    <string name="increase_quantity">Anzahl erhöhen</string>
+    <string name="quantity_value">%1$d</string>
+    <string name="quantity_description">Anzahl: %1$d</string>
+    <string name="unit_price">Pro Getränk: %1$s</string>
+    <string name="total_price">Gesamt: %1$s</string>
+    <string name="order">Bestellen</string>
+    <string name="order_summary">Bestellübersicht</string>
+    <string name="empty_summary">Noch keine Bestellung.</string>
+    <string name="no_extras">Keine</string>
+    <string name="list_separator">", "</string>
+    <string name="summary_format">%1$d × %2$s\nExtras pro Getränk: %3$s\nPro Getränk: %4$s\nGesamt: %5$s</string>
+</resources>

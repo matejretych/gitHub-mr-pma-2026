@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/svOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tvHeaderTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/app_name"
+                android:textColor="@color/text_primary"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivCoffee"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:background="@color/image_background"
+                android:contentDescription="@string/coffee_espresso"
+                android:scaleType="fitCenter" />
+
+            <TextView style="@style/SectionHeading" android:text="@string/choose_coffee" />
+
+            <RadioGroup
+                android:id="@+id/rgCoffee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/rbEspresso" style="@style/Choice" />
+                <RadioButton android:id="@+id/rbCappuccino" style="@style/Choice" />
+                <RadioButton android:id="@+id/rbLatte" style="@style/Choice" />
+            </RadioGroup>
+
+            <TextView style="@style/SectionHeading" android:text="@string/customize" />
+            <CheckBox android:id="@+id/cbOatMilk" style="@style/Choice" />
+            <CheckBox android:id="@+id/cbVanilla" style="@style/Choice" />
+            <CheckBox android:id="@+id/cbExtraShot" style="@style/Choice" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="0dp"
+                    android:text="@string/quantity"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <ImageButton
+                    android:id="@+id/btnDecrease"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/decrease_quantity"
+                    android:src="@drawable/ic_remove" />
+                <TextView
+                    android:id="@+id/tvQuantity"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <ImageButton
+                    android:id="@+id/btnIncrease"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/increase_quantity"
+                    android:src="@drawable/ic_add" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvUnitPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tvTotalPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:accessibilityLiveRegion="polite"
+                android:textColor="@color/accent"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="56dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/accent"
+                android:text="@string/order"
+                android:textAllCaps="false"
+                android:textColor="@color/background"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/divider" />
+            <TextView style="@style/SectionHeading" android:text="@string/order_summary" />
+            <TextView
+                android:id="@+id/tvSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:accessibilityLiveRegion="polite"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/empty_summary"
+                android:textColor="@color/text_secondary"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

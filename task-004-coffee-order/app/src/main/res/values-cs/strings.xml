@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Objednávka kávy</string>
+    <string name="choose_coffee">Vyber si kávu</string>
+    <string name="coffee_espresso">Espresso</string>
+    <string name="coffee_cappuccino">Cappuccino</string>
+    <string name="coffee_latte">Latte</string>
+    <string name="coffee_image">Ilustrace: %1$s</string>
+    <string name="customize">Doplňky</string>
+    <string name="extra_oat_milk">Ovesné mléko</string>
+    <string name="extra_vanilla">Vanilkový sirup</string>
+    <string name="extra_shot">Extra dávka espressa</string>
+    <string name="choice_price">%1$s · %2$s</string>
+    <string name="extra_price">%1$s (+%2$s)</string>
+    <string name="quantity">Počet kusů</string>
+    <string name="decrease_quantity">Snížit počet kusů</string>
+    <string name="increase_quantity">Zvýšit počet kusů</string>
+    <string name="quantity_value">%1$d</string>
+    <string name="quantity_description">Počet kusů: %1$d</string>
+    <string name="unit_price">Za nápoj: %1$s</string>
+    <string name="total_price">Celkem: %1$s</string>
+    <string name="order">Objednat</string>
+    <string name="order_summary">Souhrn objednávky</string>
+    <string name="empty_summary">Zatím žádná objednávka.</string>
+    <string name="no_extras">Žádné</string>
+    <string name="list_separator">", "</string>
+    <string name="summary_format">%1$d × %2$s\nDoplňky ke každému nápoji: %3$s\nZa nápoj: %4$s\nCelkem: %5$s</string>
+</resources>

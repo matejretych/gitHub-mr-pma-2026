@@ -5,6 +5,7 @@
 - `task-002-guess-number`: Uhodni cislo, XML a Kotlin (ukol 002).
 - `task-003-dice-xml`: Hod kostkou, Empty Views Activity s `findViewById`.
 - `task-003-dice-compose`: Hod kostkou, Empty Activity s Jetpack Compose.
+- `task-004-coffee-order`: Objednavka kavy, XML a View Binding.
 
 Kazdou slozku otevri v Android Studiu jako samostatny projekt a spust na
 emulatoru nebo telefonu s Androidem 7.0 (API 24) nebo vyssim. Projekty pouzivaji
@@ -41,3 +42,25 @@ na nove obrazovce opet dostupne. Symbol ma take textovy popis pro pristupnost.
 ![Compose aplikace](screenshots/dice-compose.png)
 
 Zadani: https://github.com/zizanek/github-tz-pma-2026/issues/3
+
+## Ukol 004: Objednavka kavy
+
+Projekt `MyApp004Objednavka` ve slozce `task-004-coffee-order` pouziva
+LinearLayout a View Binding. RadioButton vybira espresso, cappuccino nebo
+latte a meni vlastni vektorovou ilustraci v `drawable`. Checkboxy pridavaji
+ovesne mleko, vanilkovy sirup a extra davku espressa. Tlacitko Objednat
+vypise zvolenou konfiguraci do souhrnu.
+
+Vlastni rozsireni: pocet kusu (1 az 10) a okamzity prepocet ceny vcetne
+doplnku ke kazdemu napoji. Souhrn zachycuje posledni potvrzenou objednavku.
+Rozpracovana konfigurace i souhrn zustavaji zachovane pri otoceni zarizeni.
+
+Texty jsou ve `values/strings.xml` anglicky (fallback), ve `values-cs/`
+cesky a ve `values-de/` nemecky. Jazyk urcuje nastaveni zarizeni.
+Ceny zustavaji v CZK, jejich zapis se ridi zvolenym jazykem.
+
+Zadani: https://github.com/zizanek/github-tz-pma-2026/issues/4
+
+Screenshot vlastniho rozsireni pro odevzdani:
+
+![Pocet kusu, vypocet ceny a souhrn objednavky](screenshots/coffee-order-extension-cs.png)
