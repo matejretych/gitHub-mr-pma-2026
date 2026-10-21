@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Objednávka kávy V2</string>
+    <string name="choose_coffee">Vyber si kávu</string>
+    <string name="coffee_espresso">Espresso</string>
+    <string name="coffee_cappuccino">Cappuccino</string>
+    <string name="coffee_latte">Latte</string>
+    <string name="coffee_image">Ilustrace: %1$s</string>
+    <string name="customize">Doplňky</string>
+    <string name="extra_oat_milk">Ovesné mléko</string>
+    <string name="extra_vanilla">Vanilkový sirup</string>
+    <string name="extra_shot">Extra dávka espressa</string>
+    <string name="choice_price">%1$s · %2$s</string>
+    <string name="extra_price">%1$s (+%2$s)</string>
+    <string name="quantity">Počet kusů</string>
+    <string name="decrease_quantity">Snížit počet kusů</string>
+    <string name="increase_quantity">Zvýšit počet kusů</string>
+    <string name="quantity_value">%1$d</string>
+    <string name="quantity_description">Počet kusů: %1$d</string>
+    <string name="unit_price">Za nápoj: %1$s</string>
+    <string name="total_price">Celkem: %1$s</string>
+    <string name="order_summary">Souhrn objednávky</string>
+    <string name="no_extras">Žádné</string>
+    <string name="list_separator">", "</string>
+    <string name="review_order">Zkontrolovat objednávku</string>
+    <string name="back_to_edit">Zpět k úpravě</string>
+    <string name="selected_coffee">%1$d × %2$s</string>
+    <string name="selected_extras">Doplňky ke každému nápoji: %1$s</string>
+    <string name="invalid_order">Chybí údaje objednávky. Vrať se prosím k výběru.</string>
+    <string name="order_information">Informace o objednávce</string>
+    <string name="order_information_text">1. NAŠE KÁVA\nZákladem kávového menu je espresso. Cappuccino spojuje espresso s teplým mlékem a vrstvou pěny, zatímco latte obsahuje větší podíl mléka. Každý nápoj má vlastní charakter, od malého a výrazného espressa až po jemné mléčné latte.\n\n2. MLÉKO\nOvesné mléko lze přidat do espressa nebo jím nahradit mléko v cappuccinu a latte. Zvolená varianta mléka platí pro každý nápoj v objednávce. Mléko a rostlinné alternativy se při šlehání mohou lišit výslednou strukturou pěny.\n\n3. SIRUP A EXTRA ESPRESSO\nVanilkový sirup dodá nápoji sladkou chuť. Extra dávka espressa zvýší množství kávy v každém nápoji. Tyto doplňky je možné nezávisle kombinovat a každý zvolený doplněk má vlastní příplatek za jeden nápoj.\n\n4. POČET KUSŮ\nJedna objednávka obsahuje jeden až deset nápojů se stejným výběrem a doplňky. Například dvě latte s vanilkovým sirupem obsahují sirup v obou nápojích. Různé kombinace patří do samostatných objednávek.\n\n5. CENA\nCena jednoho nápoje se skládá z vybrané kávy a všech zvolených doplňků. Celková cena vzniká vynásobením této částky počtem kusů. Všechny ceny v menu jsou v českých korunách, a to i při zobrazení nabídky v jiném jazyce.\n\n6. PŘÍPRAVA\nČerstvě připravená káva nejlépe chutná krátce po přípravě. Struktura mléčné pěny se při chladnutí mění a jednotlivé vrstvy latte se postupně promíchávají. Vzhled hotového nápoje se proto může lišit od ilustrace v menu.\n\n7. SERVÍROVÁNÍ\nEspresso se podává v malém šálku, cappuccino v širším šálku a latte ve vyšší sklenici. Jednotlivé nápoje se odlišují poměrem kávy, mléka a pěny. Vybrané doplňky rozšiřují zvolený nápoj a účtují se navíc k jeho základní ceně.</string>
+</resources>

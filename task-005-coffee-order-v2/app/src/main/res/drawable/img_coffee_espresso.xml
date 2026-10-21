@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="320dp" android:height="160dp" android:viewportWidth="320" android:viewportHeight="160">
+    <!-- Vlastni ilustrace maleho salku espressa. -->
+    <path android:fillColor="#D0E3DD" android:pathData="M76,135 Q160,120 244,135 Q240,148 160,149 Q80,148 76,135" />
+    <path android:fillColor="#00000000" android:strokeColor="#087F72" android:strokeWidth="10" android:pathData="M204,64 C252,50 248,113 205,110" />
+    <path android:fillColor="#087F72" android:pathData="M104,58 L212,58 L204,108 Q202,132 160,133 Q118,132 112,108 Z" />
+    <path android:fillColor="#DDEEE9" android:pathData="M104,58 C104,39 212,39 212,58 C212,77 104,77 104,58" />
+    <path android:fillColor="#71472D" android:pathData="M112,58 C112,45 204,45 204,58 C204,71 112,71 112,58" />
+    <path android:fillColor="#C99456" android:pathData="M119,54 Q159,44 196,55 Q155,51 128,61 Z" />
+    <path android:fillColor="#00000000" android:strokeColor="#A3C6BB" android:strokeWidth="3" android:strokeLineCap="round" android:pathData="M140,34 C126,24 147,21 140,10 M168,32 C155,22 176,19 169,8" />
+</vector>

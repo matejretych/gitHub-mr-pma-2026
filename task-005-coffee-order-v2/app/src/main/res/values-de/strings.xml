@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Kaffeebestellung V2</string>
+    <string name="choose_coffee">Kaffee auswählen</string>
+    <string name="coffee_espresso">Espresso</string>
+    <string name="coffee_cappuccino">Cappuccino</string>
+    <string name="coffee_latte">Latte</string>
+    <string name="coffee_image">Illustration: %1$s</string>
+    <string name="customize">Extras</string>
+    <string name="extra_oat_milk">Hafermilch</string>
+    <string name="extra_vanilla">Vanillesirup</string>
+    <string name="extra_shot">Zusätzlicher Espresso</string>
+    <string name="choice_price">%1$s · %2$s</string>
+    <string name="extra_price">%1$s (+%2$s)</string>
+    <string name="quantity">Anzahl</string>
+    <string name="decrease_quantity">Anzahl verringern</string>
+    <string name="increase_quantity">Anzahl erhöhen</string>
+    <string name="quantity_value">%1$d</string>
+    <string name="quantity_description">Anzahl: %1$d</string>
+    <string name="unit_price">Pro Getränk: %1$s</string>
+    <string name="total_price">Gesamt: %1$s</string>
+    <string name="order_summary">Bestellübersicht</string>
+    <string name="no_extras">Keine</string>
+    <string name="list_separator">", "</string>
+    <string name="review_order">Bestellung prüfen</string>
+    <string name="back_to_edit">Zurück zur Auswahl</string>
+    <string name="selected_coffee">%1$d × %2$s</string>
+    <string name="selected_extras">Extras pro Getränk: %1$s</string>
+    <string name="invalid_order">Die Bestelldaten fehlen. Bitte zur Auswahl zurückkehren.</string>
+    <string name="order_information">Informationen zur Bestellung</string>
+    <string name="order_information_text">1. UNSER KAFFEE\nEspresso bildet die Grundlage unserer Kaffeekarte. Cappuccino verbindet Espresso mit warmer Milch und Milchschaum, während Latte einen höheren Milchanteil enthält. Jedes Getränk hat seinen eigenen Charakter, vom kleinen, kräftigen Espresso bis zum milden Latte.\n\n2. MILCH\nHafermilch kann einem Espresso hinzugefügt werden oder die Milch in Cappuccino und Latte ersetzen. Die gewählte Milchoption gilt für jedes Getränk der Bestellung. Milch und pflanzliche Alternativen können beim Aufschäumen unterschiedliche Konsistenzen entwickeln.\n\n3. SIRUP UND ZUSÄTZLICHER ESPRESSO\nVanillesirup verleiht dem Getränk eine süße Note. Ein zusätzlicher Espresso erhöht die Kaffeemenge in jedem Getränk. Diese Extras lassen sich unabhängig kombinieren. Für jedes gewählte Extra wird ein eigener Aufpreis pro Getränk berechnet.\n\n4. ANZAHL\nEine Bestellung enthält ein bis zehn Getränke mit derselben Auswahl und denselben Extras. Zwei Latte mit Vanillesirup enthalten beispielsweise beide Sirup. Unterschiedliche Kombinationen gehören in getrennte Bestellungen.\n\n5. PREIS\nDer Einzelpreis setzt sich aus dem gewählten Kaffee und allen gewählten Extras zusammen. Der Gesamtpreis ergibt sich aus dem Einzelpreis multipliziert mit der Anzahl. Alle Preise sind in tschechischen Kronen angegeben, auch wenn die Karte in einer anderen Sprache angezeigt wird.\n\n6. ZUBEREITUNG\nFrisch zubereiteter Kaffee schmeckt am besten kurz nach der Zubereitung. Die Konsistenz des Milchschaums verändert sich beim Abkühlen und die Schichten eines Latte vermischen sich allmählich. Das fertige Getränk kann deshalb anders aussehen als die Abbildung auf der Karte.\n\n7. SERVIEREN\nEspresso wird in einer kleinen Tasse, Cappuccino in einer breiteren Tasse und Latte in einem höheren Glas serviert. Die Getränke unterscheiden sich im Verhältnis von Kaffee, Milch und Schaum. Gewählte Extras ergänzen das Getränk und werden zusätzlich zum Grundpreis berechnet.</string>
+</resources>

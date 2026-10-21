@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+        <TextView
+            android:id="@+id/tvHeaderTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/text_primary"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/ivCoffee"
+            android:layout_width="0dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/image_background"
+            android:contentDescription="@string/coffee_espresso"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHeaderTitle" />
+        <TextView
+            android:id="@+id/tvCoffeeTitle"
+            style="@style/SectionHeading"
+            android:layout_width="0dp"
+            android:text="@string/choose_coffee"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivCoffee" />
+        <RadioGroup
+            android:id="@+id/rgCoffee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCoffeeTitle">
+            <RadioButton android:id="@+id/rbEspresso" style="@style/Choice" />
+            <RadioButton android:id="@+id/rbCappuccino" style="@style/Choice" />
+            <RadioButton android:id="@+id/rbLatte" style="@style/Choice" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/tvExtrasTitle"
+            style="@style/SectionHeading"
+            android:layout_width="0dp"
+            android:text="@string/customize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rgCoffee" />
+        <CheckBox
+            android:id="@+id/cbOatMilk"
+            style="@style/Choice"
+            android:layout_width="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvExtrasTitle" />
+        <CheckBox
+            android:id="@+id/cbVanilla"
+            style="@style/Choice"
+            android:layout_width="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cbOatMilk" />
+        <CheckBox
+            android:id="@+id/cbExtraShot"
+            style="@style/Choice"
+            android:layout_width="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cbVanilla" />
+        <TextView
+            android:id="@+id/tvQuantityLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/quantity"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnDecrease"
+            app:layout_constraintTop_toBottomOf="@id/cbExtraShot" />
+        <ImageButton
+            android:id="@+id/btnDecrease"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/decrease_quantity"
+            android:src="@drawable/ic_remove"
+            app:layout_constraintEnd_toStartOf="@id/tvQuantity"
+            app:layout_constraintTop_toTopOf="@id/tvQuantityLabel" />
+        <TextView
+            android:id="@+id/tvQuantity"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="@color/text_primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/btnIncrease"
+            app:layout_constraintTop_toTopOf="@id/tvQuantityLabel" />
+        <ImageButton
+            android:id="@+id/btnIncrease"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/increase_quantity"
+            android:src="@drawable/ic_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvQuantityLabel" />
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/quantityBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="tvQuantityLabel,btnIncrease" />
+        <TextView
+            android:id="@+id/tvUnitPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quantityBottom" />
+        <TextView
+            android:id="@+id/tvTotalPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:accessibilityLiveRegion="polite"
+            android:textColor="@color/accent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUnitPrice" />
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/accent"
+            android:text="@string/review_order"
+            android:textAllCaps="false"
+            android:textColor="@color/background"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTotalPrice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

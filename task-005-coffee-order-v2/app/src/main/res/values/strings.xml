@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Coffee order V2</string>
+    <string name="choose_coffee">Choose your coffee</string>
+    <string name="coffee_espresso">Espresso</string>
+    <string name="coffee_cappuccino">Cappuccino</string>
+    <string name="coffee_latte">Latte</string>
+    <string name="coffee_image">Illustration: %1$s</string>
+    <string name="customize">Extras</string>
+    <string name="extra_oat_milk">Oat milk</string>
+    <string name="extra_vanilla">Vanilla syrup</string>
+    <string name="extra_shot">Extra espresso shot</string>
+    <string name="choice_price">%1$s · %2$s</string>
+    <string name="extra_price">%1$s (+%2$s)</string>
+    <string name="quantity">Quantity</string>
+    <string name="decrease_quantity">Decrease quantity</string>
+    <string name="increase_quantity">Increase quantity</string>
+    <string name="quantity_value">%1$d</string>
+    <string name="quantity_description">Quantity: %1$d</string>
+    <string name="unit_price">Per drink: %1$s</string>
+    <string name="total_price">Total: %1$s</string>
+    <string name="order_summary">Order summary</string>
+    <string name="no_extras">None</string>
+    <string name="list_separator">", "</string>
+    <string name="review_order">Review order</string>
+    <string name="back_to_edit">Back to editing</string>
+    <string name="selected_coffee">%1$d × %2$s</string>
+    <string name="selected_extras">Extras per drink: %1$s</string>
+    <string name="invalid_order">Order details are missing. Please return to the selection.</string>
+    <string name="order_information">About your order</string>
+    <string name="order_information_text">1. OUR COFFEE\nEspresso is the foundation of our coffee menu. Cappuccino pairs espresso with warm milk and a layer of foam, while latte contains a larger proportion of milk. Each drink has its own character, from a short, intense espresso to a smooth, milky latte.\n\n2. MILK\nOat milk is available as an addition to espresso or as a replacement for the milk in cappuccino and latte. The selected milk option applies to every drink in the order. Milk and plant-based alternatives can produce different textures when steamed.\n\n3. SYRUP AND EXTRA ESPRESSO\nVanilla syrup adds a sweet flavour. An extra espresso shot increases the amount of coffee in each drink. These additions can be combined independently, and each selected addition has its own price per drink.\n\n4. QUANTITY\nOne order contains between one and ten drinks with the same selection and extras. For example, two lattes with vanilla syrup include syrup in both drinks. Different combinations belong in separate orders.\n\n5. PRICE\nThe price per drink consists of the selected coffee and all selected extras. The total is this price multiplied by the number of drinks. All menu prices are in Czech crowns, including when the menu is displayed in another language.\n\n6. PREPARATION\nFreshly prepared coffee is best enjoyed shortly after preparation. The texture of milk foam changes as the drink cools, and layers in a latte gradually mix. The appearance of a prepared drink can therefore differ from its menu illustration.\n\n7. SERVING\nEspresso is served in a small cup, cappuccino in a wider cup and latte in a taller glass. The proportions of coffee, milk and foam distinguish the drinks. The selected extras complement the chosen drink without changing its base price.</string>
+</resources>

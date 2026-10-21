@@ -6,6 +6,7 @@
 - `task-003-dice-xml`: Hod kostkou, Empty Views Activity s `findViewById`.
 - `task-003-dice-compose`: Hod kostkou, Empty Activity s Jetpack Compose.
 - `task-004-coffee-order`: Objednavka kavy, XML a View Binding.
+- `task-005-coffee-order-v2`: Objednavka kavy V2, ConstraintLayout a dve Activity.
 
 Kazdou slozku otevri v Android Studiu jako samostatny projekt a spust na
 emulatoru nebo telefonu s Androidem 7.0 (API 24) nebo vyssim. Projekty pouzivaji
@@ -64,3 +65,44 @@ Zadani: https://github.com/zizanek/github-tz-pma-2026/issues/4
 Screenshot vlastniho rozsireni pro odevzdani:
 
 ![Pocet kusu, vypocet ceny a souhrn objednavky](screenshots/coffee-order-extension-cs.png)
+
+## Ukol 005: Objednavka kavy V2
+
+Novy projekt `MyApp005ObjednavkaV2` ve slozce `task-005-coffee-order-v2`
+navazuje na ukol 004. Formular pouziva ConstraintLayout, RadioGroup,
+CheckBoxy a okamzity prepocet ceny pomoci lambda posluchacu.
+View Binding propojuje obe obrazovky s Kotlinem.
+
+Tlacitko Zkontrolovat objednavku predava vybranou kavu, doplnky, pocet kusu
+a celkovou cenu pres explicitni Intent do `SummaryActivity`.
+Ta cte `getStringExtra`, `getBooleanExtra` a `getIntExtra` a zobrazi rekapitulaci.
+ScrollView s `fillViewport="true"` obsahuje vnitrni ConstraintLayout a dlouhy
+informacni text. Tlacitko Zpet k uprave je mimo scrollovany obsah, ukotvene
+ke spodni hrane obrazovky nad systemovou listou; vola `finish()`.
+Vyber se pri navratu zachova. Preklady EN, CS a DE navazuji na ukol 004.
+
+### Moznosti trvaleho ukladani
+
+- **Room (nad SQLite):** vhodne pro historii objednavek, razeni a vyhledavani.
+  Data by predstavovala entita objednavky, zapis a dotazy by zajistovalo DAO.
+  [Dokumentace Room](https://developer.android.com/training/data-storage/room).
+- **DataStore:** vhodne pro male mnozstvi dat, napr. posledni rozpracovany vyber
+  nebo preference. Podporuje asynchronni a transakcni aktualizace, ale pro
+  slozitejsi historii a castecne aktualizace je vhodnejsi Room.
+  [Dokumentace DataStore](https://developer.android.com/topic/libraries/architecture/datastore).
+- **Soubor JSON v internim ulozisti:** jednoducha moznost pro maly seznam,
+  ale aplikace musi sama resit serializaci, bezpecne prepisovani a zmeny formatu.
+  Interni soubory nevyzaduji opravneni a pri odinstalaci se odstrani.
+  [Dokumentace souboru](https://developer.android.com/training/data-storage/app-specific).
+
+Pro budouci historii bych zvolil Room. Ukladal by se identifikator, cas,
+typ kavy, doplnky, pocet kusu a cena platna v okamziku objednavky.
+Zmena ceniku tak nezmeni stare objednavky. Zapis by probihal v korutine mimo
+hlavni vlakno. Trvale ukladani zatim neni implementovano: navazny ukol
+pozaduje pruzkum moznosti. Intent a ulozeny stav Activity nejsou databaze.
+
+Zadani: https://github.com/zizanek/github-tz-pma-2026/issues/5
+
+![Vyber kavy V2](screenshots/coffee-v2-selection.png)
+
+![Rekapitulace objednavky V2](screenshots/coffee-v2-summary.png)
